@@ -1,1 +1,56 @@
 /*  your css code here. If applicable */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+  background-color: #fafafa;
+}
+
+h3#h {
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+#image-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#image-container img {
+  width: 100px;
+  height: 150px;
+  border: 3px solid transparent;
+  transition: border 0.2s ease-in-out;
+  border-radius: 6px;
+}
+
+#image-container img.selected {
+  border: 3px solid #00b7ff;
+  box-shadow: 0 0 10px rgba(0, 183, 255, 0.5);
+}
+
+#buttons {
+  margin-top: 10px;
+}
+
+button {
+  padding: 8px 16px;
+  font-size: 14px;
+  border: 1px solid #aaa;
+  background: #f5f5f5;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background: #e0e0e0;
+}
+
+#para {
+  font-size: 16px;
+  margin-top: 15px;
+  color: #333;
+}
