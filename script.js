@@ -24,6 +24,7 @@ function initialize() {
     const img = document.createElement("img");
     img.classList.add(imgClass);
     img.dataset.index = i;
+	img.setAttribute("data-ns-test", imgClass);
     img.style.cursor = "pointer";
 
     img.addEventListener("click", () => handleImageClick(img));
@@ -59,7 +60,7 @@ function renderResetButton() {
 function renderVerifyButton() {
   if (!document.getElementById("verify")) {
     const verifyBtn = document.createElement("button");
-    verifyBtn.id = "verify";
+    verifyBtn.id = "btn";
     verifyBtn.textContent = "Verify";
     verifyBtn.addEventListener("click", verifySelection);
     buttonsContainer.appendChild(verifyBtn);
